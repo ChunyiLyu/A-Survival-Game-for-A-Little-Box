@@ -1,0 +1,23 @@
+Chunyi Lyu
+An Introduction to Computer Science
+James Marshall
+Dec.17 2013
+
+Conference Project Description
+
+		My conference project is a little game. When you start the game, the program creates a window. Inside that window, you can see a box, walls, and floors. The user can press different keys in the keyboard to move the box and to do other interactive things with the program. The goal of this game is to try to move the box to the highest floor. The game has 3 different levels, and the difficulty increases the higher the level is. Different levels will have different number of floors, but the goal is always to move the box to the top floor. Finishing all three levels will be considered as a completion of the game. 
+
+		This game is coded using Calico library, language Python. I mainly use the Calico Graphics library's feature “Physics mode” in order to do the animation. 
+
+		I see my code having three main parts. The first part is the basic section. It creates the window, the box, the base, and walls. The friction and mass of the box is adjusted for easier controlling of the box. All of the bases and walls are set to “static” mode, so they will not move around due to the Gravity of the Calico Physics mode. 
+
+		The second section of the code is responsible for how the program go to next level. I originally create an empty list for each level (level1, level2, level3), and then append the floors that I want to draw for each level to each list. The main program will draw the floor in list “level1” at first. After that, if the user press the key “n”, the program will undraw the floor in the previous list “level1”, and then draw the floors in the next list, which is “level2”. The same thing happens when you want to move from level 2 to level 3. The floors of the previous level will be erased, and the floors of the next level will be drawn in the window. After the user completes the level 3, and press the “n”, a congratulations message will show in the window. User can then press the key “e” to exit. 
+
+		The third section is the function for making the program respond differently to different keys. In the function “keypressed(obj, event)”, the program will give different reactions according to which key has been pressed. Space, right, and left keys will result in movement of the box. Pressing key “n” will move the game to next level. Key “r” can restart the game (this only works if the box “dies” first). Key “e” can quit the game(this will only work if the user completes all of the levels and gets a congratulation message.) In addition, global variable “count” will keep counting how many times that the user uses the key “space”, if it excesses 20, a text message will appear in the window, and the box will die. The user can then quit the game or press key “r” to restart the 
+		game. 
+
+		The only bug that I find is after restarting the game, sometimes when I use the key “space”, the box does not react corresponding to my code. It only happens randomly, and does not display a certain pattern. 
+
+		The program is written using the language Python and the graphics library of the program Calico, so for running this program, you need to install Calico first. After that, you can open the Calico program and load the code file, type “game()” in the shell, and then the window will be created. 
+
+ 
