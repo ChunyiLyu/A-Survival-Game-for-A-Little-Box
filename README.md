@@ -11,3 +11,5 @@ be considered as a completion of the game.
 
 This game is coded using Calico library, language Python. I mainly use the Calico Graphics library's feature “Physics mode”
 in order to do the animation. 
+
+Finished at Dec.18 2013
